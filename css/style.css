@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+/* 全体のスタイル調整 の幅・余白指定を楽にする*/
+* {
+  box-sizing: border-box;
+}
+
+/* bodyの初期スタイル調整 */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: #333;
+  background-color: #fff;
+}
+
+
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  text-align: justify;
+}
+
+
+address {
+  font-style: normal;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  margin: 1em 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 60px 0;
+}
+
+/* 初期スタイル調整 ここまで */
+
+/* 共通スタイル調整 ここから */
+
+/*h2関連*/
+h2 {
+ color: #364e96;
+  padding: 0.5em 0;
+  border-top: solid 3px #364e96;
+  border-bottom: solid 3px #364e96;
+text-align: center;
+}
+
+/*テキスト関連*/
+.txt-center {
+  text-align: center;
+}
+
+.txt-lead {
+  font-weight: 700;
+font-size: 120%;
+color: red;
+}
+
+
+/*レイアウト関連*/
+.inner {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+/*スマホ*/
+@media screen and (min-width:768px) {
+  .inner {
+    max-width: 1000px;
+  }
+}
+
+.sp-only {
+  display: block;
+}
+
+.pc-only {
+  display: none;
+}
+
+/*ＰＣ*/
+@media screen and (min-width:768px) {
+  .sp-only {
+    display: none;
+  }
+
+  .pc-only {
+    display: block;
+  }
+}
+
+
+
+/* 共通スタイル調整 ここまで */
+
+/*-------------------------------------------
+　ホワイトエリア
+-------------------------------------------*/
+.white-area {
+  background-color: #fff;
+}
+
+
+/*-------------------------------------------
+　ブルーエリア
+-------------------------------------------*/
+.blue-area {
+  background-color: #b0e0e6;
+}
+
+.blue-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blue-item {
+  
+  text-align: center;
+  padding: 20px 20px 0;
+  margin: 5px;
+  border: 3px solid #527acc;
+  border-radius: 10px;
+ background-color:  rgba(255, 255, 255, 0.5);
+}
+
+.blue-item img {
+  width: 120px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width:768px) {
+  .blue-content {
+    flex-wrap: nowrap;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .blue-item {
+    flex: 1;
+  }
+
+}
+
+
+/*-------------------------------------------
+　イエローエリア
+-------------------------------------------*/
+.yellow-area {
+  background-color: #fafad2;
+}
+
+/*-------------------------------------------
+　ホワイト3　エリア
+-------------------------------------------*/
+.white3-area {
+  background-color: #fff;
+}
+.white3-area {
+  padding-bottom: 0;
+}
+
+.white3-area img {
+  display: block;
+  max-width: 280px;
+  max-height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px auto 30px;
+}
+
+
+@media screen and (min-width:768px) {
+  .white3-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 150px;
+  }
+
+}
+
+/*-------------------------------------------
+　共通ボックス
+-------------------------------------------*/
+/* フレックスボックスレイアウトCSS */
+.item {
+  width: 260px;
+}
+.item-img {
+  width: 250px;
+  margin: 0 auto;
+}
+.item-body {
+  padding: 0;
+}
+.item-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #003366;
+}
+.item-body p {
+  font-size: 14px;
+  color: #333;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+	flex-wrap: wrap;
+}
+.items .item {
+  margin: 10px
+}
+
+/*-------------------------------------------
+　フッター
+-------------------------------------------*/
+.foot-area {
+  color: #fff;
+  text-align: center;
+  padding-top: 40px;
+  background-color: #596680;
+}
+
+.foot-area_copy {
+  color: #ccc;
+  font-size: 12px;
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+}
+
